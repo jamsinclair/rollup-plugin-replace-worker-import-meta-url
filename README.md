@@ -1,6 +1,6 @@
 # rollup-plugin-replace-worker-import-meta-url
 
-Rollup plugin to update `import.meta.url` and relative dynamic urls to use `import.meta.resolve` instead.
+Rollup plugin to update Worker constructors using `new URL('file.js', import.meta.url)` to solve a Vite build issue.
 
 For example, this plugin will transform the following code:
 

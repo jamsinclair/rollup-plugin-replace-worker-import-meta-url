@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Rollup plugin to replace new Worker(new URL(url, import.meta.url)) which breaks some vite builds",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "scripts": {
     "lint": "prettier -l .",
     "lint:fix": "prettier --write .",
