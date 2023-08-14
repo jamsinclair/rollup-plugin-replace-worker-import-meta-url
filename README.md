@@ -1,5 +1,7 @@
 # rollup-plugin-replace-worker-import-meta-url
 
+[![npm version](https://badge.fury.io/js/rollup-plugin-replace-worker-import-meta-url.svg)](https://badge.fury.io/js/rollup-plugin-replace-worker-import-meta-url)
+
 Rollup plugin to update Worker constructors using `new URL('file.js', import.meta.url)` to solve a Vite build issue.
 
 For example, this plugin will transform the following code:
