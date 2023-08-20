@@ -1,6 +1,8 @@
-# rollup-plugin-replace-worker-import-meta-url
+# rollup-plugin-replace-worker-import-meta-url [deprecated]
 
 [![npm version](https://badge.fury.io/js/rollup-plugin-replace-worker-import-meta-url.svg)](https://badge.fury.io/js/rollup-plugin-replace-worker-import-meta-url)
+
+> ⚠️ This package is deprecated as it didn't actually solve the problem it was trying to solve. There should be no reason to use this plugin.
 
 Rollup plugin to update Worker constructors using `new URL('file.js', import.meta.url)` to solve a Vite build issue.
 
@@ -20,9 +22,7 @@ worker.postMessage({ foo: "bar" });
 
 ## Why?
 
-This plugin is solving a niche problem with Vite. Vite seems to have some issues with using a worker inside a worker ([Vite#13367](https://github.com/vitejs/vite/issues/13367)). Once this issue is resolved, this plugin will no longer be needed.
-
-Using `import.meta.resolve` instead of `import.meta.url` seems to be a hacky workaround for this issue.
+This plugin was trying to solve a niche problem with Vite. Vite seems to have some issues with using a worker inside a worker. Unfortunately the plugin didn't actually solve the problem. I'm leaving this here for posterity but I don't recommend using it.
 
 ## Installation
 

@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-replace-worker-import-meta-url",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rollup plugin to replace new Worker(new URL(url, import.meta.url)) which breaks some vite builds",
   "main": "index.js",
   "files": [
@@ -26,6 +26,7 @@
   "author": "jamsinclair <jamsinclairnz+npm@gmail.com>",
   "license": "MIT",
   "types": "./index.d.ts",
+  "deprecated": "This plugin is deprecated because it doesn't solve the problem it was intended for. There should be no reason to use.",
   "devDependencies": {
     "c8": "^8.0.1",
     "prettier": "^3.0.1",
